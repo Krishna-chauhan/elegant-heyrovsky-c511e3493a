@@ -9,10 +9,10 @@ spec:
   pathPrefixes:
     - /us-west-1-backstractelb-8274c3-coll-8219f64785d840be8e64ac00503d28c6/ # e.g. /infallible-naveen-... elegant-heyrovsky-c511e3493a/
   scaleTargetRef:
-    name: elegant-heyrovsky-c511e3493a
+    name: elegant-heyrovsky-c511e3493a-depl
     kind: Deployment
     apiVersion: apps/v1
-    service: elegant-heyrovsky-c511e3493a # e.g. coll-8a2a...-srv
+    service: elegant-heyrovsky-c511e3493a-src # e.g. coll-8a2a...-srv
     port: 80
   replicas:
     min: 0
