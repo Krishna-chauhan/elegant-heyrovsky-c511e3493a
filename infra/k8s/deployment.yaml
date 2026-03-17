@@ -93,7 +93,7 @@ spec:
             cpu: "100m"
         readinessProbe:
           httpGet:
-            path: /health  # Change this to your app's actual health check path
+            path: /sigma/sanity_check/heartbeat  # Change this to your app's actual health check path
             port: 7070       # The port your app listens on
           initialDelaySeconds: 5  # Give it 5s before checking
           periodSeconds: 5        # Check every 5s
